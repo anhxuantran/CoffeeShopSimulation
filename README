@@ -1,0 +1,15 @@
+CoffeeShop Simulation README
+
+Part 1
+	
+The simulation has five parameters: the number of customers that wish to enter the coffee shop; the number of tables in the coffee shop (note: there can only be as many customers inside the coffee shop as there are tables at any one time - other customers must wait for a free table before going into the shop and placing their order); the number of cooks in the kitchen that fill orders; the capacity of machines in the kitchen used for producing food; and a flag as to whether everyone has the same order or not.
+
+Customers in the coffee shop place their orders (a list of food items) when they enter the coffee shop. These orders are then handled by available cooks. Each cook handles one order at a time. A cook handles an order by using machines to cook the food items. There will be one machine for each kind of food item. Each machine produces food items in parallel (for different orders, or even the same order) up to their stated capacity.
+
+Our particular coffee shop will only have three food items, each made by a single machine: a burger, made by machine Grill, which takes 500 ms to make; fries, made by machine Fryer, which take 350ms to make; and a coffee, made by machine CoffeeMaker2000, which takes 100 ms to make.
+
+
+Part 2
+
+The major difference in part 2 is to now use concurrent collections rather than using intrinsic locks.
+We were to also to create our own valdiation to check that the simulation output is correct.
